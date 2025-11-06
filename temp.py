@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def greet():
     """Return a custom friendly HTTP greeting."""
-    return "Hi Everyone ! I am running through cloud shell"
+    #return "Hi Everyone ! I am running through cloud shell"
     num=int(input("num"))
     if (num>0 & num<100):
         num=num+273
