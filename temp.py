@@ -5,10 +5,10 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
-num=int(input("num"))
+num=int(input("num:"))
 def greet():
     """Return a custom friendly HTTP greeting."""
-    return "Hi Everyone ! I am running through cloud shell"
+    print("Hi Everyone ! I am running through cloud shell ")
     if (num>0 & num<100):
         num=num+273
         print(f"Celius to Faherant: {num}")
