@@ -5,6 +5,7 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
+num=int(input("num"))
 def greet():
     """Return a custom friendly HTTP greeting."""
     return "Hi Everyone ! I am running through cloud shell"
@@ -15,5 +16,4 @@ def greet():
 if __name__ == "__main__":
     app_host = "http://127.0.0.1:8080"
     print(f"App host link: {app_host}")
-    num=int(input("num"))
     app.run(host="127.0.0.1", port=8080, debug=True)
